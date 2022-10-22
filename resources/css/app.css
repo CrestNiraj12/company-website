@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --primary: #002c2b;
+    --secondary: #076461;
+    --primary-red: #ff3d00;
+    --primary-yellow: #ffbc11;
+    --secondary-light: #0a837f;
+}
+
+body {
+    font-family: "Roboto" !important;
+    background-color: #1b2223;
+}
+
+h2 {
+    color: var(--primary-yellow);
+}
+
+.awssld__bullets {
+    bottom: 30px !important;
+    z-index: 2;
+}
