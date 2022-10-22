@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('guarantees', function (Blueprint $table) {
             $table->id();
-            $table->string("guarantee_number");
+            $table->string("guarantee_number")->unique();
             $table->string("issued_office");
             $table->unsignedBigInteger("category_id");
             $table->foreign("category_id")->references("id")->on("guarantee_categories");

@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('projects', function (Blueprint $table) {
             $table->id();
             $table->string("name");
-            $table->string("contract_number");
+            $table->string("contract_number")->unique();
             $table->date("awarded_date");
             $table->float("amount");
             $table->string("client_name");
